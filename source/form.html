@@ -36,62 +36,73 @@
   <!--Основной блог -->
   <main class="main-container-form">
     <section class="main-container-form__program-selection program-selection">
-      <div>
+      <div class="program-selection__wrapper">
         <h2 class="program-selection__title">Подбор программы</h2>
         <h3 class="program-selection__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</h3>
         <form class="program-selection_questionnaire questionnaire" action="https://echo.htmlacademy.ru/" method="post">
           <ul class="questionnaire__cat-data cat-data">
-
             <li class="cat-data__item">
               <label class="cat-data__name">ИМЯ:*
-                <input class="cat-data__name-form" type="text" name="name-cat" value="Барсик">
+                <input class="cat-data__name-form" type="text" name="name-cat" value="Барсик" required>
               </label>
             </li>
-
             <li class="cat-data__item">
               <label class="cat-data__wt">Вес (кг):*
-                <input class="cat-data__wt-form" type="number" name="wt-cat" value="7">
+                <input class="cat-data__wt-form" type="number" name="wt-cat" value="7" required>
               </label>
             </li>
-
             <li class="cat-data__item">
               <label class="cat-data__age">Возраст (лет):
-                <input class="cat-data__age-form">
+                <input class="cat-data__age-form" type="number" name="age-cat" value="7">
               </label>
             </li>
           </ul>
-
-          <fieldset>
-            <legend class="visually-hidden">Выбор цели программы питания.</legend>
-            <ul>
-              <li>
-                <label>
-                  <input type="radio">
+          <fieldset class="questionnaire__purpose-program purpose-program">
+            <legend class="visually-hidden"> Цель программы питания.</legend>
+            <ul class="purpose-program__list">
+              <li class="purpose-program__item">
+                <label class="purpose-program__slim">
+                  <input class="purpose-program__slim-form" type="radio" name="purpose-program" id="program-slim"
+                         checked>похудение
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="radio">
+              <li class="purpose-program__item">
+                <label class="purpose-program__pro">
+                  <input class="purpose-program__pro-form" type="radio" name="purpose-program" id="program-pro">набор
+                  массы
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="radio">
+              <li class="purpose-program__item">
+                <label class="purpose-program__advise">
+                  <input class="purpose-program__advise" type="radio" name="purpose-program" id="need-your-advice)">
+                  не знаю (нужен ваш совет)
                 </label>
               </li>
             </ul>
           </fieldset>
 
-          <h3 class="contact-data">Контактные данные (владельца кота)</h3>
-          <label>E-mail:*
-            <input>
-          </label>
-
-          <label>Телефон:*
-            <input>
-          </label>
+          <div class="questionnaire__contact contact">
+            <h3 class="contact__title">Контактные данные (владельца кота)</h3>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <label class="contact__email">E-mail:*
+                  <input class="contact__email-form" type="email" value="kuklachev@gmail.com" name="email" required>
+                </label>
+              </li>
+              <li class="contact__item">
+                <label class="contact__phone">Телефон:*
+                  <input class="contact__phone-form" type="number" value="8 (960) 900-60-90" name="phone" required>
+                </label>
+              </li>
+            </ul>
+          </div>
 
           <div class="comment">
+            <h3>Комментарий</h3>
+
+            <textarea rows="10">Расскажите обо всех повaдках кота
+
+            </textarea>
 
           </div>
 
