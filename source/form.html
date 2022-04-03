@@ -57,30 +57,31 @@
               </label>
             </li>
           </ul>
-          <fieldset class="questionnaire__purpose-program purpose-program">
-            <legend class="visually-hidden"> Цель программы питания.</legend>
-            <ul class="purpose-program__list">
-              <li class="purpose-program__item">
-                <label class="purpose-program__slim">
-                  <input class="purpose-program__slim-form" type="radio" name="purpose-program" id="program-slim"
-                         checked>похудение
-                </label>
-              </li>
-              <li class="purpose-program__item">
-                <label class="purpose-program__pro">
-                  <input class="purpose-program__pro-form" type="radio" name="purpose-program" id="program-pro">набор
-                  массы
-                </label>
-              </li>
-              <li class="purpose-program__item">
-                <label class="purpose-program__advise">
-                  <input class="purpose-program__advise" type="radio" name="purpose-program" id="need-your-advice)">
-                  не знаю (нужен ваш совет)
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
+          <div class="questionnaire__purpose-program purpose-program">
+            <fieldset class="purpose-program__form">
+              <legend class="visually-hidden"> Цель программы питания.</legend>
+              <ul class="purpose-program__list">
+                <li class="purpose-program__item">
+                  <label class="purpose-program__slim">
+                    <input class="purpose-program__slim-form" type="radio" name="purpose-program" id="program-slim"
+                           checked>похудение
+                  </label>
+                </li>
+                <li class="purpose-program__item">
+                  <label class="purpose-program__pro">
+                    <input class="purpose-program__pro-form" type="radio" name="purpose-program" id="program-pro">набор
+                    массы
+                  </label>
+                </li>
+                <li class="purpose-program__item">
+                  <label class="purpose-program__advise">
+                    <input class="purpose-program__advise" type="radio" name="purpose-program" id="need-your-advice)">
+                    не знаю (нужен ваш совет)
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <div class="questionnaire__contact contact">
             <h3 class="contact__title">Контактные данные (владельца кота)</h3>
             <ul class="contact__list">
@@ -97,44 +98,44 @@
             </ul>
           </div>
 
-          <div class="comment">
-            <h3>Комментарий</h3>
-
-            <textarea rows="10">Расскажите обо всех повaдках кота
-
+          <div class="questionnaire__comment comment">
+            <h3 class="comment__title">Комментарий</h3>
+            <label class="comment__skill-cat" for="skills"> </label>
+            <textarea class="comment__skill-cat-form" rows="10" cols="15" id="skills">Расскажите обо всех повaдках кота
             </textarea>
-
           </div>
 
-          <div class="additionally">
-            <fieldset>
-              <legend class="visually-hidden">Дополнительно</legend>
-              <ul>
-                <li>
-                  <label>
-                    <input type="checkbox">
+          <div class="questionnaire__additionally additionally">
+            <fieldset class="additionally__form">
+              <legend class="additionally__buy-more buy-more">Дополнительно</legend>
+              <ul class="buy-more__list">
+                <li class="buy-more__item">
+                  <label class="buy-more__fake-sugar">
+                    <input class="buy-more__fake-sugar-form" type="checkbox" name="buy-more[]" value="fake-sugar"
+                           checked>
+                    Сахарозаменитель
                   </label>
                 </li>
-                <li>
-                  <label>
-                    <input type="checkbox">
+                <li class="buy-more__item">
+                  <label class="buy-more__water">
+                    <input class="buy-more__water-form" type="checkbox" name="buy-more[]" value="water"> Питьевая вода
                   </label>
                 </li>
-                <li>
-                  <label>
-                    <input type="checkbox">
+                <li class="buy-more__item">
+                  <label class="buy-more__milk">
+                    <input class="buy-more__milk-form" type="checkbox" name="buy-more[]" value="milk"> Молоко
                   </label>
                 </li>
-                <li>
-                  <label>
-                    <input type="checkbox">
+                <li class="buy-more__item">
+                  <label class="buy-more__vitamins">
+                    <input class="buy-more__vitamins-form" type="checkbox" name="buy-more[]" value="vitamins"> Витамины
                   </label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <button>Отправить заявку</button>
-          <p>* — Обязательные поля</p>
+          <button class="questionnaire__send-form" type="submit">Отправить заявку</button>
+          <p class="questionnaire__ required-form">* — Обязательные поля</p>
         </form>
       </div>
     </section>
