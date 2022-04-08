@@ -1,20 +1,16 @@
+// Viewports
+
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 767px;
+
 @import "main-header";
-@import "page__body";
 @import "visually-hidden";
 @import "promo";
 @import "catalog-program";
 @import "advantages";
 @import "live-example";
 @import "footer";
-
-
-
-
-
-
-
-
-
 
 
 /*шрифты*/
@@ -34,4 +30,24 @@
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  height: 100%;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.page__body {
+  box-sizing: border-box;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #000000;
 }
