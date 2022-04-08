@@ -1,6 +1,7 @@
 @import "main-header";
 @import "page__body";
 /*@import "visually-hidden";*/
+@import "promo";
 
 
 
@@ -16,32 +17,18 @@
 /*шрифты*/
 @font-face {
   font-family: "Oswald";
-  font-style: medium;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+  url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
-  src: url("fonts/oswaldmedium.woff") format("woff");
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Oswald";
-  font-style: medium;
-  font-weight: 700;
-  src: url("fonts/oswaldmedium.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: regular;
-  font-weight: 400;
-  src: url("fonts/oswaldregular.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: regular;
-  font-weight: 700;
-  src: url("fonts/oswaldregular.woff2") format("woff2");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+  url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
   font-display: swap;
 }
