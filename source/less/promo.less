@@ -100,8 +100,52 @@
 }
 
 @media (min-width: @desktop-width) {
+  .promo__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+
+  .promo__wrapper-tablet {
+    padding: 62px 190px 20px 190px;
+  }
+
+  .promo__wrapper-background {
+    background: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+  }
 
 
+  .promo__title {
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
+
+  .promo__subtitle {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .promo__button-choose-program {
+    position: absolute;
+    top: 400px;
+    left: -750px;
+    min-height: 54px;
+  }
+
+  .promo__button-wrapper {
+    position: relative;
+    background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    margin: 0;
+    margin-top: -105px;
+    z-index: -1;
+  }
 }
-
-
