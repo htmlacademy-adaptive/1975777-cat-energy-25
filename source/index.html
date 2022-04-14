@@ -12,7 +12,8 @@
     <a class="main-header__logo-cat logotype" href="#">
       <img class="logo-cat" src="img/logo-mobile.svg" width="34" height="37" alt="Логотип Кот Энерджи.">
     </a>
-      <img class="main-header__logo-cat-energy" src="img/logo-cat-energy.svg" height="18" width="101" alt="Логотип Cat Energy.">
+    <img class="main-header__logo-cat-energy" src="img/logo-cat-energy.svg" height="18" width="101"
+      alt="Логотип Cat Energy.">
 
     <nav class="main-header__nav main-nav">
       <button class="main-nav__toggle" type="button">
@@ -99,44 +100,52 @@
     <section class="live-example">
       <div class="live-example__wrapper">
         <h2 class="live-example__title">Живой пример</h2>
-        <p class="live-example__text"> Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-          часов в день.
-        </p>
-        <table class="live-example__statistic module">
-          <tr>
-            <td class="module__number">5 кг</td>
-            <td class="module__text module__text--lose-weight">снижение <br> веса</td>
-          </tr>
-          <tr>
-            <td class="module__number">60 дней</td>
-            <td class="module__text module__text--period">затрачено <br> времени</td>
-          </tr>
-        </table>
-        <table class="live-example__price food-price">
-          <tr>
-            <td class="food-price__sum">Затраты на питание:</td>
-            <td class="food-price__result">15 000 руб.</td>
-          </tr>
-        </table>
+        <div class="live-example__wrapper--desktop">
+          <section class="live-example__">
+          <p class="live-example__text"> Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+            часов в день.
+          </p>
+          <table class="live-example__statistic module">
 
-        <div class="live-example__cat-comparison cat-comparison">
-          <div class="cat-comparison__wrapper">
-            <div class="cat-comparison__before cat-comparison__before--active">
-              <img class="cat-comparison__image-before" src="img/cat-fat.png" alt="Кот до приема кэт энерджи."
-                width="677" height="520">
-            </div>
-            <div class="cat-comparison__after">
-              <img class="cat-comparison__image-after" src="img/cat-skinny.png" alt="Кот после приема кэт энерджи."
-                width="545" height="520">
-            </div>
-            <div class="cat-comparison__range range-bar">
-              <span class="range-bar__before">Было</span>
-              <label class="range-bar__label">
-                <input class="range-bar__input" type="range" min="0" max="10" step="5" value="5">
-              </label>
-              <span class="range-bar__after">Стало</span>
+            <tr class="module__description">
+              <td class="module__number">5 кг</td>
+              <td class="module__text module__text--lose-weight">снижение <br> веса</td>
+            </tr>
+
+            <tr class="module__description">
+              <td class="module__number">60 дней</td>
+              <td class="module__text module__text--period">затрачено <br> времени</td>
+            </tr>
+
+            <tr class="module__description module__description--result">
+              <td class="module__number module__text--result">Затраты на питание:</td>
+              <td class="module__number module__text--result">15 000 руб.</td>
+            </tr>
+
+          </table>
+          </section>
+          <div class="live-example__wrapper--tablet">
+
+            <div class="live-example__cat-comparison cat-comparison">
+              <div class="cat-comparison__wrapper">
+                <div class="cat-comparison__before cat-comparison__before--active">
+                  <img class="cat-comparison__image-before" src="img/cat-fat.png" alt="Кот до приема кэт энерджи."
+                    width="677" height="520">
+                </div>
+                <div class="cat-comparison__after">
+                  <img class="cat-comparison__image-after" src="img/cat-skinny.png" alt="Кот после приема кэт энерджи."
+                    width="545" height="520">
+                </div>
+                <div class="cat-comparison__range range-bar">
+                  <span class="range-bar__before">Было</span>
+                  <label class="range-bar__label">
+                    <input class="range-bar__input" type="range" min="0" max="10" step="5" value="5">
+                  </label>
+                  <span class="range-bar__after">Стало</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
