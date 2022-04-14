@@ -1,5 +1,7 @@
 .footer__wrapper {
   background-color: rgba(242, 242, 242, 1);
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__collaboration {
@@ -26,11 +28,43 @@
 }
 
 .footer__social-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
 .footer__copyright {
   display: flex;
-  padding-bottom: 32px;
+  padding: 28px 20px;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+
+
+  .footer__logo {
+    margin-top: 39px;
+    margin-bottom: 53px;
+    text-align: center;
+  }
+
+  .footer__social {
+    margin-bottom: 49px;
+    padding: 3px 4px 2px 2px;
+  }
+
+  .footer__social-list {
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .footer__copyright {
+    display: flex;
+    padding-bottom: 32px;
+  }
+
+
 }
