@@ -5,6 +5,14 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: @text-grey;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    margin-right: 22px;
+    align-items: center;
+    display: flex;
+  }
 }

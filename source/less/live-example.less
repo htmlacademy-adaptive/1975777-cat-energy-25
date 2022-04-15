@@ -10,7 +10,7 @@
   font-size: 36px;
   line-height: 40px;
   text-align: left;
-  color: #000000;
+  color: @black;
 }
 
 .live-example__text {
@@ -19,7 +19,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: @text-grey;
 }
 
 .live-example__price {
@@ -29,6 +29,66 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: @black;
 }
 
+.live-example__price {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.live-example__statistic {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .live-example__wrapper {
+    background-color: @white;
+    padding: 0;
+  }
+
+  .live-example__wrapper--tablet {
+    background-color: rgba(234, 234, 234, 1);
+  }
+
+  .live-example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .live-example__text {
+    margin: 63px 0 54px 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .live-example__wrapper {
+    background-color: @white;
+    padding: 0;
+  }
+
+  .live-example__wrapper--desktop {
+    background-color: rgba(242, 242, 242, 1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .live-example__wrapper--tablet {
+    background-color: rgba(242, 242, 242, 1);
+  }
+
+  .live-example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 76px;
+  }
+
+  .live-example__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
