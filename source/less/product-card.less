@@ -54,7 +54,7 @@
 
 @media (min-width: @tablet-width) {
   .product-card__item {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     background-color: @basic-grey;
   }
@@ -87,5 +87,11 @@
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-card__title {
+    line-height: 21px;
   }
 }

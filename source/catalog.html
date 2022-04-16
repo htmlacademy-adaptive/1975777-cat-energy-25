@@ -24,14 +24,14 @@
       <nav class="main-header__nav main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list reset-list">
-            <li class="main-nav__item ">
-              <a href="#">Главная</a>
+            <li class="main-nav__item">
+              <a href="./index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__item--active" href="/catalog.html">Каталог продукции</a>
+              <a class="main-nav__link main-nav__item--active" href="">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="/form.html">Подбор программы</a>
+              <a class="main-nav__link" href="./form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -200,6 +200,7 @@
               <button class="product-card__button-order">Заказать</button>
             </li>
 
+            <!--карточка показать все-->
             <li class="catalog-product-cards__all-catalog all-catalog">
               <h2 class="all-catalog__title">Показать еще 100500 товаров</h2>
               <h3 class="all-catalog__subtitle">На самом деле вкусов гораздо больше!</h3>
@@ -218,9 +219,9 @@
           <li class="additional-products__item">
             <h3 class="additional-products__name-card">Сахарозаменитель</h3>
             <table class="additional-products__info-card">
-              <tr class="fake-sugar">
-                <td>1 упаковка (100 г)</td>
-                <td>200 P.</td>
+              <tr class="additional-products__fake-sugar">
+                <td class="additional-products__pack">1 упаковка (100 г)</td>
+                <td class="additional-products__price">200 P.</td>
               </tr>
             </table>
             <button class="additional-products__buy-card">Заказать</button>
@@ -229,9 +230,9 @@
           <li class="additional-products__item">
             <h3 class="additional-products__name-card">Питьевая вода</h3>
             <table class="additional-products__info-card">
-              <tr class="water">
-                <td>5 литров</td>
-                <td>50 P.</td>
+              <tr class="additional-products__water">
+                <td class="additional-products__pack">5 литров</td>
+                <td class="additional-products__price">50 P.</td>
               </tr>
             </table>
             <button class="additional-products__buy-card">Заказать</button>
@@ -240,9 +241,9 @@
           <li class="additional-products__item">
             <h3 class="additional-products__name-card">Молоко</h3>
             <table class="additional-products__info-card">
-              <tr class="milk">
-                <td>1 литр</td>
-                <td>100 P.</td>
+              <tr class="additional-products__milk">
+                <td class="additional-products__pack">1 литр</td>
+                <td class="additional-products__price">100 P.</td>
               </tr>
             </table>
             <button class="additional-products__buy-card">Заказать</button>
@@ -251,17 +252,19 @@
           <li class="additional-products__item">
             <h3 class="additional-products__name-card">Витамины</h3>
             <table class="additional-products__info-card">
-              <tr class="vitamins">
-                <td>1 упаковка (30 г)</td>
-                <td>300 P.</td>
+              <tr class="additional-products__vitamins">
+                <td class="additional-products__pack">1 упаковка (30 г)</td>
+                <td class="additional-products__price">300 P.</td>
               </tr>
             </table>
             <button class="additional-products__buy-card">Заказать</button>
           </li>
+
+          <li class="additional-products__bonus bonus-prize">
+            <h2 class="bonus-prize__title">Закажите все<br> и получите чехол для<br> кота в подарок!</h2>
+          </li>
         </ul>
-        <div class="additional-products__bonus bonus-prize">
-          <h2 class="bonus-prize__title">Закажите все<br> и получите чехол для<br> кота в подарок!</h2>
-        </div>
+
       </div>
     </section>
   </main>
