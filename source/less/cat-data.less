@@ -1,6 +1,9 @@
 .cat-data__item {
   margin: 0;
   margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .cat-data__name {
@@ -10,6 +13,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @text-grey;
+  margin-right: 12px;
 }
 
 .cat-data__name-form {
@@ -24,4 +28,27 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @text-grey;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .cat-data__item {
+    margin-bottom: 20px;
+  }
+
+  .cat-data__name {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 10px;
+  }
+
+  .cat-data__name-form {
+    padding: 11px 18px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }

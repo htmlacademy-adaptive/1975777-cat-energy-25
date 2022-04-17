@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-.main-nav__item a {
+.main-nav__link {
   display: block;
   cursor: pointer;
   font-family: inherit;
@@ -37,7 +37,7 @@
     width: auto;
   }
 
-  .main-nav__item a {
+  .main-nav__link {
     font-size: 18px;
     line-height: 24px;
     min-height: auto;
@@ -51,9 +51,17 @@
     min-width: 480px;
   }
 
-  .main-nav__item a {
+  .main-nav__link {
     font-size: 20px;
     line-height: 30px;
     color: @white;
+  }
+
+  .main-nav__link--catalog {
+    color: @black;
+  }
+
+  .main-nav__link--form {
+    color: @black;
   }
 }

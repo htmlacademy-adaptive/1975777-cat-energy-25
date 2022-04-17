@@ -10,7 +10,7 @@
   <!--Шапка-->
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo-cat logotype" href="#">
+      <a class="main-header__logo-cat logotype" href="./index.html">
         <img class="logotype__logo-cat--mobile" src="img/logo-mobile.svg" width="34" height="37"
           alt="Логотип Кот Энерджи.">
         <img class="logotype__logo-cat--tablet" src="img/logo-tablet.svg" width="174" height="52"
@@ -25,13 +25,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list reset-list">
             <li class="main-nav__item">
-              <a href="./index.html">Главная</a>
+              <a class="main-nav__link main-nav__link--catalog" href="./index.html">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link main-nav__link--catalog" href="">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__item--active" href="">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="./form.html">Подбор программы</a>
+              <a class="main-nav__link main-nav__link--catalog" href="./form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -215,60 +215,52 @@
     <section class="additional-products">
       <div class="additional-products__wrapper">
         <h2 class="additional-products__title">Дополнительные товары</h2>
+        <div class="additional-products__body">
         <ul class="additional-products__cards reset-list">
+
           <li class="additional-products__item">
             <h3 class="additional-products__name-card">Сахарозаменитель</h3>
-            <table class="additional-products__info-card">
-              <tr class="additional-products__fake-sugar">
-                <td class="additional-products__pack">1 упаковка (100 г)</td>
-                <td class="additional-products__price">200 P.</td>
-              </tr>
-            </table>
+            <div class="additional-products__info-card">
+              <div class="additional-products__pack">1 упаковка (100 г)</div>
+              <div class="additional-products__price">200 P.</div>
+            </div>
             <button class="additional-products__buy-card">Заказать</button>
           </li>
 
           <li class="additional-products__item">
             <h3 class="additional-products__name-card">Питьевая вода</h3>
-            <table class="additional-products__info-card">
-              <tr class="additional-products__water">
-                <td class="additional-products__pack">5 литров</td>
-                <td class="additional-products__price">50 P.</td>
-              </tr>
-            </table>
+            <div class="additional-products__info-card">
+                <div class="additional-products__pack">5 литров</div>
+                <div class="additional-products__price">50 P.</div>
+            </div>
             <button class="additional-products__buy-card">Заказать</button>
           </li>
 
           <li class="additional-products__item">
             <h3 class="additional-products__name-card">Молоко</h3>
-            <table class="additional-products__info-card">
-              <tr class="additional-products__milk">
-                <td class="additional-products__pack">1 литр</td>
-                <td class="additional-products__price">100 P.</td>
-              </tr>
-            </table>
+            <div class="additional-products__info-card">
+                <div class="additional-products__pack">1 литр</div>
+                <div class="additional-products__price">100 P.</div>
+            </div>
             <button class="additional-products__buy-card">Заказать</button>
           </li>
 
           <li class="additional-products__item">
             <h3 class="additional-products__name-card">Витамины</h3>
-            <table class="additional-products__info-card">
-              <tr class="additional-products__vitamins">
-                <td class="additional-products__pack">1 упаковка (30 г)</td>
-                <td class="additional-products__price">300 P.</td>
-              </tr>
-            </table>
+            <div class="additional-products__info-card">
+                <div class="additional-products__pack">1 упаковка (30 г)</div>
+                <div class="additional-products__price">300 P.</div>
+            </div>
             <button class="additional-products__buy-card">Заказать</button>
           </li>
-
-          <li class="additional-products__bonus bonus-prize">
-            <h2 class="bonus-prize__title">Закажите все<br> и получите чехол для<br> кота в подарок!</h2>
-          </li>
         </ul>
-
+        <div class="additional-products__bonus bonus-prize">
+          <h2 class="bonus-prize__title">Закажите все<br> и получите чехол для<br> кота в подарок!</h2>
+        </div>
+        </div>
       </div>
     </section>
   </main>
-  <!--Подвал-->
   <!--Подвал-->
   <footer class="footer">
     <div class="footer__wrapper">

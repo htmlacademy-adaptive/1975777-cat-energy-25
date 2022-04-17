@@ -8,14 +8,11 @@
   margin-bottom: 35px;
 }
 
-.contact__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .contact__item {
   margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contact__label {
@@ -25,13 +22,60 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @text-grey;
+  margin-right: 19px;
+  white-space: nowrap;
 }
 
 .contact__input {
+  padding: 14px 16px;
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: @text-grey;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .contact__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .contact__item {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact__label {
+    white-space: nowrap;
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 18px;
+  }
+
+  .contact__input {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact__input {
+    min-width: 486px;
+  }
+
+  .contact__item {
+    margin-bottom: 67px;
+  }
+
 }
