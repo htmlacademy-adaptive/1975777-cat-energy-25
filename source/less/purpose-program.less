@@ -6,9 +6,8 @@
 }
 
 .purpose-program__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  display: flex;
+  flex-direction: column;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -21,4 +20,29 @@
 .purpose-program__item {
   margin: 0;
   margin-bottom: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .purpose-program__form {
+    padding: 25px 28px;
+    border: 1px solid #e7e7e7;
+    margin-top: 60px;
+  }
+
+  .purpose-program__list {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .purpose-program__item {
+    margin-bottom: 23px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .purpose-program__form {
+    margin: 0;
+    margin-left: 80px;
+  }
+
 }
