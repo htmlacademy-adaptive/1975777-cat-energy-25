@@ -1,11 +1,12 @@
 .promo__wrapper {
+  position: relative;
   padding: 27px 20px 0 20px;
 }
 
 .promo__wrapper-background {
   background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
   padding: 27px 35px 164px 35px;
   margin: -27px -20px 0 -20px;
@@ -32,6 +33,12 @@
   text-align: center;
 }
 
+.promo__image {
+  position: absolute;
+  top: 195px;
+  left: 55px;
+}
+
 .promo__button-choose-program {
   box-sizing: border-box;
   min-width: 100%;
@@ -46,6 +53,10 @@
   text-align: center;
   color: @white;
   text-transform: uppercase;
+}
+
+.promo__button-wrapper {
+  padding: 138px 20px 0 20px;
 }
 
 @media (min-width: @tablet-width) {
