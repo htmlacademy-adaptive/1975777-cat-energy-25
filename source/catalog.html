@@ -13,28 +13,33 @@
       <a class="main-header__logo-cat logotype" href="./index.html">
         <img class="logotype__logo-cat--mobile" src="img/logo-mobile.svg" width="34" height="37"
           alt="Логотип Кот Энерджи.">
-        <img class="logotype__logo-cat--tablet" src="img/logo-tablet.svg" width="174" height="52"
+        <img class="logotype__logo-cat--tablet" src="img/logo-tablet.svg" width="174" height="51"
           alt="Логотип Кэт Энерджи.">
       </a>
       <img class="main-header__logo-cat-energy" src="img/logo-cat-energy.svg" height="18" width="101"
         alt="Логотип Cat Energy.">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-      </button>
-      <nav class="main-header__nav main-nav">
+      <nav class="main-header__nav main-nav main-nav--closed main-nav--js">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+          <svg class=" main-nav__burger" width="24" height="18" viewBox="0 0 24 18" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" fill="#000000"/>
+          </svg>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list reset-list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--catalog" href="./index.html">Главная</a>
+              <a class="main-nav__link" href="#">Главная</a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link main-nav__link--catalog" href="">Каталог продукции</a>
+              <a class="main-nav__link" href="./catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--catalog" href="./form.html">Подбор программы</a>
+              <a class="main-nav__link" href="./form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
+        <script src="./js/script.js"></script>
       </nav>
     </div>
   </header>
@@ -50,7 +55,7 @@
             <li class="product-card__item">
               <img class="product-card__icon" src="img/product-card-cat-energy-pro-chicken-500.png"
                 alt="Кэт энерджи про 500 грамм со вкусом курицы." width="68" height="86">
-              <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
+              <h3 class="product-card__title">Cat Energy<br> PRO 500 г</h3>
               <table class="product-card__details">
                 <tr class="mass">
                   <td>Масса</td>
@@ -216,47 +221,61 @@
       <div class="additional-products__wrapper">
         <h2 class="additional-products__title">Дополнительные товары</h2>
         <div class="additional-products__body">
-        <ul class="additional-products__cards reset-list">
+          <ul class="additional-products__cards reset-list">
 
-          <li class="additional-products__item">
-            <h3 class="additional-products__name-card">Сахарозаменитель</h3>
-            <div class="additional-products__info-card">
-              <div class="additional-products__pack">1 упаковка (100 г)</div>
-              <div class="additional-products__price">200 P.</div>
-            </div>
-            <button class="additional-products__buy-card">Заказать</button>
-          </li>
+            <li class="additional-products__item">
+              <h3 class="additional-products__name-card">Сахарозаменитель</h3>
+              <div class="additional-products__info-card">
+                <div class="additional-products__pack">1 упаковка (100 г)</div>
+                <div class="additional-products__price">200 P.</div>
+              </div>
+              <button class="additional-products__buy-card">Заказать</button>
+            </li>
 
-          <li class="additional-products__item">
-            <h3 class="additional-products__name-card">Питьевая вода</h3>
-            <div class="additional-products__info-card">
+            <li class="additional-products__item">
+              <h3 class="additional-products__name-card">Питьевая вода</h3>
+              <div class="additional-products__info-card">
                 <div class="additional-products__pack">5 литров</div>
                 <div class="additional-products__price">50 P.</div>
-            </div>
-            <button class="additional-products__buy-card">Заказать</button>
-          </li>
+              </div>
+              <button class="additional-products__buy-card">Заказать</button>
+            </li>
 
-          <li class="additional-products__item">
-            <h3 class="additional-products__name-card">Молоко</h3>
-            <div class="additional-products__info-card">
+            <li class="additional-products__item">
+              <h3 class="additional-products__name-card">Молоко</h3>
+              <div class="additional-products__info-card">
                 <div class="additional-products__pack">1 литр</div>
                 <div class="additional-products__price">100 P.</div>
-            </div>
-            <button class="additional-products__buy-card">Заказать</button>
-          </li>
+              </div>
+              <button class="additional-products__buy-card">Заказать</button>
+            </li>
 
-          <li class="additional-products__item">
-            <h3 class="additional-products__name-card">Витамины</h3>
-            <div class="additional-products__info-card">
+            <li class="additional-products__item">
+              <h3 class="additional-products__name-card">Витамины</h3>
+              <div class="additional-products__info-card">
                 <div class="additional-products__pack">1 упаковка (30 г)</div>
                 <div class="additional-products__price">300 P.</div>
-            </div>
-            <button class="additional-products__buy-card">Заказать</button>
-          </li>
-        </ul>
-        <div class="additional-products__bonus bonus-prize">
-          <h2 class="bonus-prize__title">Закажите все<br> и получите чехол для<br> кота в подарок!</h2>
-        </div>
+              </div>
+              <button class="additional-products__buy-card">Заказать</button>
+            </li>
+          </ul>
+          <div class="additional-products__bonus bonus-prize">
+            <svg class="additional-products__icon" aria-hidden="true" width="78" height="80" viewBox="0 0 78 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M64.02 34.71H14.03a3.17 3.17 0 0 1-3.18-3.16v-9.47a3.17 3.17 0 0 1 3.18-3.16h49.98a3.17 3.17 0 0 1 3.19 3.16v9.47a3.17 3.17 0 0 1-3.18 3.16ZM14.03 21.35c-.4 0-.74.33-.74.73v9.47c0 .41.33.74.74.74h49.98c.41 0 .75-.33.75-.74v-9.47c0-.4-.34-.73-.75-.73H14.03Z"
+                fill="#fff"/>
+              <path
+                d="M57.04 67.15H21a6.11 6.11 0 0 1-6.13-6.09V33.5c0-.67.55-1.2 1.22-1.2.68 0 1.22.53 1.22 1.2v27.56A3.68 3.68 0 0 0 21 64.73h36.04a3.68 3.68 0 0 0 3.7-3.67V33.5a1.22 1.22 0 0 1 2.44 0v27.56a6.11 6.11 0 0 1-6.14 6.09Z"
+                fill="#fff"/>
+              <path
+                d="M39.02 67.15c-.67 0-1.22-.54-1.22-1.21V33.5c0-.67.55-1.2 1.22-1.2.68 0 1.22.53 1.22 1.2v32.44c0 .67-.54 1.2-1.22 1.2ZM23.81 21.34a7.8 7.8 0 0 1-3.17-10.6A7.9 7.9 0 0 1 31.3 7.6c5.82 3.13 8.96 11.86 9.09 12.23l-2.3.8c-.03-.08-2.96-8.22-7.95-10.9a5.46 5.46 0 0 0-7.36 2.17 5.39 5.39 0 0 0 2.2 7.32l-1.17 2.13Z"
+                fill="#fff"/>
+              <path
+                d="m54.23 21.34-1.16-2.13a5.38 5.38 0 0 0-1.03-9.92 5.43 5.43 0 0 0-4.14.43c-4.98 2.68-7.91 10.82-7.94 10.9l-2.3-.8c.13-.37 3.27-9.1 9.08-12.23a7.86 7.86 0 0 1 11.29 9.1c-.6 2-1.95 3.66-3.8 4.65ZM61.95 50.93H16.09c-.67 0-1.22-.54-1.22-1.21 0-.67.55-1.21 1.22-1.21h45.86c.67 0 1.22.54 1.22 1.21 0 .67-.55 1.21-1.22 1.21Z"
+                fill="#fff"/>
+            </svg>
+            <h2 class="bonus-prize__title">Закажите все<br> и получите чехол для<br> кота в подарок!</h2>
+          </div>
         </div>
       </div>
     </section>
@@ -271,11 +290,16 @@
             <h2 class="collaboration__title">приглашаем<br>к сотрудничеству <br>дилеров!</h2>
             <p class="collaboration__address">ул. Большая<br> Конюшенная, д. 19/8 <br>Санкт-Петербург</p>
           </div>
-          <div class="collaboration__map">
-            <h3 class="visually-hidden">Наше местоположение.</h3>
-            <img class="collaboration__image-map" src="img/map.jpg" alt="Карта, с отмеченной локацией." width="320"
-              height="362">
-          </div>
+        </div>
+        <div class="collaboration__map">
+          <h3 class="visually-hidden">Наше местоположение.</h3>
+          <iframe class="collaboration__google-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+            width="100%"
+            height="362"
+            allowfullscreen
+            title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+          </iframe>
         </div>
       </section>
 
