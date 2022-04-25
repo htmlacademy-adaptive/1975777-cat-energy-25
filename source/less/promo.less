@@ -1,11 +1,31 @@
+.promo::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: @basic-green;
+  background-size: cover;
+  width: 100%;
+  height: 302px;
+  top: 0;
+}
+
+.promo {
+  position: relative;
+}
+
 .promo__wrapper {
   position: relative;
-  padding: 27px 20px 0 20px;
+  padding-bottom: 22px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .promo__title {
   margin: 0;
-  margin-bottom: 25px;
+  padding: 27px 0 20px;
   font-family: inherit;
   font-weight: 400;
   font-size: 36px;
@@ -14,7 +34,8 @@
 }
 
 .promo__subtitle {
-  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 29px;
   font-family: inherit;
   font-weight: 400;
   font-size: 14px;
@@ -23,17 +44,27 @@
   text-align: center;
 }
 
-.promo__image--mobile {
-  position: absolute;
-  top: 165px;
-  left: 55px;
+.promo__image {
+  margin: 0 auto;
+  margin-bottom: 2px;
+  height: auto;
+}
+
+.promo__image--tablet {
+  display: none;
+}
+
+.promo__image--desktop {
+  display: none;
 }
 
 .promo__button-choose-program {
+  display: block;
   box-sizing: border-box;
-  min-width: 100%;
   min-height: 40px;
   border: 0;
+  margin-right: 20px;
+  margin-left: 20px;
   background-color: @basic-green;
   font-family: inherit;
   padding: 7px 44px;
@@ -43,59 +74,61 @@
   text-align: center;
   color: @white;
   text-transform: uppercase;
-}
-
-.promo__button-wrapper {
-  padding: 138px 20px 0 20px;
+  text-decoration: none;
 }
 
 @media (min-width: @tablet-width) {
-  .promo__wrapper {
-    padding: 0;
-  }
-
-  .promo__wrapper-tablet {
-    padding: 62px 120px 20px 120px;
-  }
-
-  .promo__wrapper-background {
-    background: none;
+  .promo {
     background-color: @white;
-    color: @black;
-    margin: 0;
-    padding: 0;
+  }
+
+  .promo__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 30px 0 30px;
   }
 
   .promo__title {
+    padding: 0;
     text-align: left;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 40px;
+    color: @black;
+    margin-left: 90px;
   }
 
   .promo__subtitle {
     font-size: 20px;
     line-height: 20px;
     text-align: left;
+    color: @black;
+    margin: 0 0 20px 90px;
   }
 
-  .promo__image--mobile {
+  .promo__image {
+    display: none;
+  }
+
+  .promo__image--tablet {
+    display: block;
+    order: 3;
+    margin-top: -75px;
+  }
+
+  .promo__image--desktop {
     display: none;
   }
 
   .promo__button-choose-program {
-    min-width: 244px;
+    order: 2;
+    z-index: 3;
+    max-width: 244px;
     font-size: 20px;
     line-height: 20px;
-  }
-
-  .promo__button-wrapper {
-    padding: 30px 90px 550px 90px;
-    margin: 0 30px 0 30px;
-    background-image: url("../img/promo-cat-energy-tablet.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    margin-left: 90px;
+    margin-top: 30px;
+    padding: 14px 26px;
   }
 }
 
@@ -106,16 +139,12 @@
     padding: 0;
   }
 
-  .promo__wrapper-tablet {
-    padding: 62px 190px 20px 190px;
+  .promo__image--tablet {
+    display: none;
   }
 
-  .promo__wrapper-background {
-    background: none;
-    background-color: @white;
-    color: @black;
-    margin: 0;
-    padding: 0;
+  .promo__image--desktop {
+    display: block;
   }
 
   .promo__title {
@@ -130,22 +159,5 @@
     line-height: 20px;
     text-align: left;
   }
-
-  .promo__button-choose-program {
-    position: absolute;
-    top: 400px;
-    left: -750px;
-    min-height: 54px;
-  }
-
-  .promo__button-wrapper {
-    position: relative;
-    background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop-mobile.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
-    margin: 0;
-    margin-top: -105px;
-    z-index: -1;
-  }
 }
+

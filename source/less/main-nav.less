@@ -9,7 +9,7 @@
   z-index: 4;
   left: 0;
   right: 0;
-  top: 66px;
+  top: 65px;
   width: 100%;
   background-color: @white;
 }
@@ -80,21 +80,26 @@
   transform: rotate(-45deg);
 }
 
-.main-nav--closed .main-nav__wrapper {
-  display: none;
-}
 
-.main-nav--opened .main-nav__wrapper {
-  display: block;
+@media (max-width: @tablet-width) {
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .main-nav {
     min-width: 440px;
-    width: auto;
+    min-height: auto;
+    background-color: @white;
   }
 
   .main-nav__list {
+    position: static;
     display: flex;
     justify-content: space-between;
   }
