@@ -13,28 +13,33 @@
       <a class="main-header__logo-cat logotype" href="./index.html">
         <img class="logotype__logo-cat--mobile" src="img/logo-mobile.svg" width="34" height="37"
           alt="Логотип Кот Энерджи.">
-        <img class="logotype__logo-cat--tablet" src="img/logo-tablet.svg" width="174" height="52"
+        <img class="logotype__logo-cat--tablet" src="img/logo-tablet.svg" width="174" height="51"
           alt="Логотип Кэт Энерджи.">
       </a>
       <img class="main-header__logo-cat-energy" src="img/logo-cat-energy.svg" height="18" width="101"
         alt="Логотип Cat Energy.">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-      </button>
-      <nav class="main-header__nav main-nav">
+      <nav class="main-header__nav main-nav main-nav--closed main-nav--js">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+          <svg class=" main-nav__burger" width="24" height="18" viewBox="0 0 24 18" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" fill="#000000"/>
+          </svg>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list reset-list">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--catalog" href="./index.html">Главная</a>
-            </li>
             <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link main-nav__link--catalog" href="">Каталог продукции</a>
+              <a class="main-nav__link" href="#">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--catalog" href="./form.html">Подбор программы</a>
+              <a class="main-nav__link" href="./catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="./form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
+        <script src="./js/script.js"></script>
       </nav>
     </div>
   </header>
