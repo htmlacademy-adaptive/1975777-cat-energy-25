@@ -11,7 +11,7 @@
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 100%;
+  line-height: 12px;
   text-align: center;
   color: @text-grey;
 }
@@ -50,4 +50,69 @@
 
 .module__description:first-child {
   margin-right: 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .module__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .module__text--result:first-child {
+    margin-bottom: 10px;
+  }
+
+  .module__description:not(:last-child) {
+    min-width: 162px;
+  }
+
+  .module__description {
+    display: flex;
+  }
+
+  .module__description--result {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    align-items: end;
+    align-self: center;
+    margin-left: auto;
+  }
+
+  .module__text--result {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .module__description:first-child {
+    margin-right: 42px;
+  }
+
+  .module__text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .module__statistic {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .module__text--result:first-child {
+    margin-bottom: 0;
+    margin-right: 63px;
+  }
+
+  .module__description--result {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .module__statistic {
+    display: flex;
+  }
 }
