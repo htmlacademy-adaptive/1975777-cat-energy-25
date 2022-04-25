@@ -42,7 +42,32 @@
 }
 
 @media (min-width: @desktop-width) {
+  .collaboration {
+    position: relative;
+  }
+
   .collaboration__invitation {
-    padding: 60px 80px 55px 80px;
+    padding: 60px 80px 56px 80px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 565px;
+    align-items: center;
+  }
+
+  .collaboration__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: @white;
+  }
+
+  .collaboration__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .collaboration__address {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
