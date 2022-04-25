@@ -18,11 +18,11 @@
       </a>
       <img class="main-header__logo-cat-energy" src="img/logo-cat-energy.svg" height="18" width="101"
         alt="Логотип Cat Energy.">
-      <nav class="main-header__nav main-nav">
+      <nav class="main-header__nav main-nav main-nav--closed main-nav--js">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
-          <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24"/>
+          <svg class=" main-nav__burger" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" fill="#000000"/>
           </svg>
         </button>
         <div class="main-nav__wrapper">
@@ -38,30 +38,24 @@
             </li>
           </ul>
         </div>
+        <script src="./js/script.js"></script>
       </nav>
     </div>
   </header>
   <!--Основной блог -->
   <main class="main-container">
-    <section class="promo">
+   <!-- <section class="promo">
       <div class="promo__wrapper">
-        <div class="promo__wrapper-tablet">
-          <div class="promo__wrapper-background">
-            <h1 class="promo__title">Функциональное питание для котов</h1>
-            <h2 class="promo__subtitle">Занялся собой? Займись котом!</h2>
-          </div>
-        </div>
-        <img class="promo__image--mobile" src="img/promo-cat-energy.png"
+        <h1 class="promo__title">Функциональное питание для котов</h1>
+        <h2 class="promo__subtitle">Занялся собой? Займись котом!</h2>
+        <img class="promo__image&#45;&#45;mobile" src="img/promo-cat-energy.png"
           alt="Фотография функционального питания для кошек Cat Energy." width="280" height="270">
-        <!-- <img class="promo__image&#45;&#45;tablet" src="img/promo-cat-energy-tablet.png" width="709" height="609"
-           alt="Фотография функционального питания для кошек Cat Energy.">
-         <img class="promo__image&#45;&#45;desktop" src="img/promo-cat-energy-desktop.png" width="552" height="499"
-           alt="Фотография функционального питания для кошек Cat Energy.">-->
-        <div class="promo__button-wrapper">
-          <button class="promo__button-choose-program" type="button">Подобрать программу</button>
-        </div>
       </div>
-    </section>
+      <div class="promo__button-wrapper">
+        <button class="promo__button-choose-program" type="button">Подобрать программу</button>
+      </div>
+
+    </section>-->
 
     <section class="catalog-program">
       <h2 class="visually-hidden">Каталог программ питания.</h2>
@@ -145,15 +139,15 @@
             </p>
             <div class="live-example__statistic module">
 
-                <div class="module__description">
-                  <span class="module__number">5 кг</span>
-                  <span class="module__text module__text--lose-weight">снижение <br> веса</span>
-                </div>
+              <div class="module__description">
+                <span class="module__number">5 кг</span>
+                <span class="module__text module__text--lose-weight">снижение <br> веса</span>
+              </div>
 
-                <div class="module__description">
-                  <span class="module__number">60 дней</span>
-                  <span class="module__text module__text--period">затрачено <br> времени</span>
-                </div>
+              <div class="module__description">
+                <span class="module__number">60 дней</span>
+                <span class="module__text module__text--period">затрачено <br> времени</span>
+              </div>
 
 
               <div class="module__description module__description--result">
