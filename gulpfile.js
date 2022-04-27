@@ -26,8 +26,8 @@ const server = (done) => {
       baseDir: 'source'
     },
     cors: true,
-    notify: true,
-    ui: true,
+    notify: false,
+    ui: false,
   });
   done();
 }
