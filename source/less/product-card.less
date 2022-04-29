@@ -88,13 +88,33 @@
 
   .product-card__icon {
     align-self: center;
-    margin-top: -90px;
+    margin-top: -80px;
     margin-bottom: 34px;
+  }
+
+  .product-card__wrapper-icon {
+    min-height: 160px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .product-card__title {
     line-height: 21px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .product-card__photo {
+    min-width: 172px;
+    height: auto;
+  }
+
+  .product-card__wrapper-icon {
+    min-height: 202px;
+  }
+
+  .product-card__icon {
+    width: auto;
+    margin-bottom: 42px;
   }
 }
