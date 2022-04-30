@@ -1,17 +1,29 @@
 .questionnaire__cat-data {
-  margin-bottom: 24px;
+  position: relative;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid @color-border;
+}
+
+.questionnaire__purpose-program {
+  padding: 20px 20px;
+  border-bottom: 1px solid @color-border;
 }
 
 .questionnaire__contact {
-  padding: 26px 0 8px 0;
+  padding: 26px 20px 8px 20px;
 }
 
 .questionnaire__comment {
-  margin-bottom: 22px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .questionnaire__additionally {
-  margin-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .questionnaire__send-form {
@@ -42,21 +54,40 @@
   color: @black;
 }
 
+
 @media (min-width: @tablet-width) {
   .questionnaire__contact {
     padding: 76px 0 65px 0;
   }
 
+  .questionnaire__cat-data {
+    border-bottom: none;
+  }
+
+  .questionnaire__purpose-program {
+    border-bottom: none;
+  }
+
+  .questionnaire__comment {
+    padding: 0;
+  }
+
   .questionnaire__send-form {
     font-size: 20px;
-    line-height: 0px;
-    width: 282px;
+    line-height: 22px;
+    min-width: 282px;
+    margin-bottom: 0;
+    flex: 0;
   }
 
   .questionnaire__required-form {
     font-size: 16px;
     line-height: 16px;
     margin-left: 60px;
+  }
+
+  .questionnaire__additionally {
+    padding: 0;
   }
 
   .questionnaire__send {
@@ -73,6 +104,7 @@
 
   .questionnaire__cat-data {
     margin-bottom: 70px;
+    padding: 0;
   }
 
   .questionnaire__contact {
@@ -108,5 +140,14 @@
   .questionnaire__required-form {
     margin-left: 80px;
   }
+
+  .questionnaire__purpose-program {
+    padding: 0;
+  }
 }
 
+@media (min-width: @desktop-width) {
+  .questionnaire__additionally {
+    margin-bottom: 0;
+  }
+}
