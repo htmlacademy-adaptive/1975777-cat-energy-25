@@ -1,11 +1,12 @@
 .comment__title {
+  display: inline-block;
   margin: 0;
-  margin-bottom: 38px;
   font-family: inherit;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: @black;
+  padding-right: 22px;
 }
 
 .comment__skill-cat-form {
@@ -20,13 +21,14 @@
   padding: 10px 12px;
   width: 100%;
   height: auto;
+  margin-top: 40px;
 }
 
 @media (min-width: @tablet-width) {
   .comment__title {
-    margin-bottom: 75px;
     font-size: 36px;
     line-height: 36px;
+    padding-right: 40px;
   }
 
   .comment__skill-cat-form {
@@ -34,6 +36,22 @@
     line-height: 30px;
     padding: 10px 19px;
     margin-bottom: 65px;
+    margin-top: 75px;
+  }
+
+  .comment__wrapper {
+    position: relative;
+  }
+
+  .comment__wrapper::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    background-color: #68b738;
+    right: 100%;
+    margin-right: 40px;
   }
 }
 
@@ -41,6 +59,4 @@
   .comment__skill-cat-form {
     margin-bottom: 67px;
   }
-
 }
-
