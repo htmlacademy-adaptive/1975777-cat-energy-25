@@ -51,12 +51,17 @@
           <h2 class="promo__title">Функциональное<br> питание для котов</h2>
           <p class="promo__subtitle">Занялся собой? Займись котом!</p>
         </div>
-        <img class="promo__image" src="img/promo-cat-energy.png"
-          alt="Фотография функционального питания для кошек Cat Energy." width="280" height="270">
-        <img class="promo__image--tablet" src="img/promo-cat-energy-tablet.png"
-          alt="Фотография функционального питания для кошек Cat Energy." width="709" height="609">
-        <img class="promo__image--desktop" src="img/promo-cat-energy-desktop.png" width="552" height="499"
-          alt="Фотография функционального питания для кошек Cat Energy.">
+        <a class="promo__banner" href="#">
+          <picture>
+            <source srcset="img/promo-cat-energy-desktop.png, img/retina/promo-cat-energy-desktop-@2x.png 2x"
+              media="(min-width: 1440px)">
+            <source srcset="img/promo-cat-energy-tablet.png, img/retina/promo-can-energy-tablet-@2x.png 2x"
+              media="(min-width: 768px)">
+            <img class="promo__image" src="img/promo-cat-energy.png"
+              srcset="img/promo-cat-energy.png, img/retina/promo-cat-energy-@2x.png 2x"
+              alt="Фотография функционального питания для кошек Cat Energy.">
+          </picture>
+        </a>
         <a class="promo__button-choose-program" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -134,43 +139,44 @@
       <div class="live-example__wrapper">
         <h2 class="live-example__title">Живой пример</h2>
         <div class="live-example__wrapper--desktop">
-          <section class="live-example__slider-desktop"> <!--создала для разделения на гриды в декстопной версии-->
+          <section class="live-example__slider-desktop">
             <p class="live-example__text"> Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-              Energy
-              Slim.
-              Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-              часов в день.
+              Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
+              по-прежнему спит по 16 часов в день.
             </p>
             <div class="live-example__statistic module">
-
               <div class="module__description">
                 <span class="module__number">5 кг</span>
                 <span class="module__text module__text--lose-weight">снижение <br> веса</span>
               </div>
-
               <div class="module__description">
                 <span class="module__number">60 дней</span>
                 <span class="module__text module__text--period">затрачено <br> времени</span>
               </div>
-
-
               <div class="module__description module__description--result">
                 <span class="module__number module__text--result">Затраты на питание:</span>
                 <span class="module__number module__text--result"> 15 000 руб.</span>
               </div>
-
             </div>
           </section>
           <div class="live-example__wrapper--tablet">
             <div class="live-example__cat-comparison cat-comparison">
               <div class="cat-comparison__wrapper">
                 <div class="cat-comparison__before cat-comparison__before--active">
-                  <img class="cat-comparison__image-before" src="img/cat-fat.png" alt="Кот до приема кэт энерджи."
-                    width="677" height="520">
+                  <picture>
+                    <source srcset="img/cat-fat-desktop.png, img/retina/cat-fat-desktop-@2x.png"
+                      media="min-width: 768px">
+                    <img class="cat-comparison__image-before" src="img/cat-fat.png"
+                      srcset="img/cat-fat.png, img/retina/cat-fat-@2x.png 2x" alt="Кот до приема кэт энерджи.">
+                  </picture>
                 </div>
                 <div class="cat-comparison__after">
-                  <img class="cat-comparison__image-after" src="img/cat-skinny.png" alt="Кот после приема кэт энерджи."
-                    width="545" height="520">
+                  <picture>
+                    <source srcset="img/cat-skinny-desktop.png, img/retina/cat-skinny-desktop-@2x.png 2x"
+                      media="min-width: 768px">
+                    <img class="cat-comparison__image-after" src="img/cat-skinny.png"
+                      alt="Кот после приема кэт энерджи.">
+                  </picture>
                 </div>
                 <div class="cat-comparison__range range-bar">
                   <span class="range-bar__before">Было</span>
