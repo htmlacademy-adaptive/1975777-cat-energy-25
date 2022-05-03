@@ -14,9 +14,22 @@ navToggle.addEventListener('click', function () {
 });
 
 
-let catComparisonRange = document.querySelector('#catComparisonRange');
 let catComparisonBlockBefore = document.querySelector('#catComparisonBlockBefore');
-let catComparisonBlockAfter = document.querySelector('#catComparisonBlockAfter');
+
+let catComparisonRange = document.querySelector('#catComparisonRange');
 catComparisonRange.addEventListener('input', function (e) {
-  catComparisonBlockBefore.style.width = catComparisonRange.value +'%';
+  catComparisonBlockBefore.style.width = catComparisonRange.value + '%';
+});
+
+let mobileToggleCatComparison = document.querySelector('#mobileToggleCatComparison');
+mobileToggleCatComparison.addEventListener('click', function (e) {
+  if (catComparisonBlockBefore.style.width === '100%') {
+    catComparisonBlockBefore.style.width = '0%';
+    //document.querySelector('#mobileToggleCatComparisonBefore').classList.add('active');
+    //document.querySelector('#mobileToggleCatComparisonAfter').classList.remove('active');
+  } else {
+    catComparisonBlockBefore.style.width = '100%';
+    //document.querySelector('#mobileToggleCatComparisonBefore').classList.remove('active');
+    //document.querySelector('#mobileToggleCatComparisonAfter').classList.add('active');
+  }
 });
