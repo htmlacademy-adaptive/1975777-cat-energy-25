@@ -40,7 +40,6 @@
             </li>
           </ul>
         </div>
-        <script src="./js/script.js"></script>
       </nav>
     </div>
   </header>
@@ -163,7 +162,8 @@
           <div class="live-example__wrapper--tablet">
             <div class="live-example__cat-comparison cat-comparison">
               <div class="cat-comparison__wrapper">
-                <div class="cat-comparison__before cat-comparison__before--active">
+
+                <div class="cat-comparison__before cat-comparison__before--active" id="catComparisonBlockBefore">
                   <picture>
                     <source srcset="img/cat-fat-desktop.png, img/retina/cat-fat-desktop-@2x.png"
                       media="min-width: 768px">
@@ -171,7 +171,8 @@
                       srcset="img/cat-fat.png, img/retina/cat-fat-@2x.png 2x" alt="Кот до приема кэт энерджи.">
                   </picture>
                 </div>
-                <div class="cat-comparison__after">
+
+                <div class="cat-comparison__after" id="catComparisonBlockAfter">
                   <picture>
                     <source srcset="img/cat-skinny-desktop.png, img/retina/cat-skinny-desktop-@2x.png 2x"
                       media="min-width: 768px">
@@ -179,10 +180,11 @@
                       alt="Кот после приема кэт энерджи.">
                   </picture>
                 </div>
+
                 <div class="cat-comparison__range range-bar">
                   <span class="range-bar__before">Было</span>
                   <label class="range-bar__label">
-                    <input class="range-bar__input" type="range" min="0" max="10" step="5" value="5">
+                    <input class="range-bar__input" id="catComparisonRange" type="range" min="0" max="100" step="1" value="50">
                   </label>
                   <span class="range-bar__after">Стало</span>
                 </div>
@@ -275,5 +277,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>

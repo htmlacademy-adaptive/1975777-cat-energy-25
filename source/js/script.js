@@ -12,3 +12,11 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+
+let catComparisonRange = document.querySelector('#catComparisonRange');
+let catComparisonBlockBefore = document.querySelector('#catComparisonBlockBefore');
+let catComparisonBlockAfter = document.querySelector('#catComparisonBlockAfter');
+catComparisonRange.addEventListener('input', function (e) {
+  catComparisonBlockBefore.style.width = catComparisonRange.value +'%';
+});
