@@ -84,6 +84,13 @@
   background-size: cover;
 }
 
+@media (min-resolution: 2dppx) {
+  .additional-products__bonus {
+    background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/retina/background-bonus-@2x.jpg");
+    background-size: cover;
+  }
+}
+
 .additional-products__bonus-title {
   font-family: "Arial", sans-serif;
   font-weight: 400;
@@ -151,7 +158,7 @@
   }
 
   .additional-products__buy-card {
-    line-height: 0;
+    line-height: 20px;
     grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: -1;
@@ -162,14 +169,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background-bonus-tablet.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .additional-products__bonus {
+      background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/retina/background-bonus-tablet-@2x.png");
+      background-size: cover;
+    }
   }
 
   .additional-products__icon {
     margin-left: 77px;
     margin-right: 0;
-    width: 57px;
+    width: 80px;
     height: auto;
   }
 
@@ -180,6 +193,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .additional-products__wrapper {
+    padding: 80px 110px 86px 110px;
+  }
+
   .additional-products__body {
     display: flex;
     margin-top: 80px;
@@ -195,7 +212,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 26px 0;
+    padding: 15px 0 17px 0;
     border-left: none;
     border-right: none;
   }
@@ -218,14 +235,25 @@
   .additional-products__bonus {
     flex-direction: column;
     margin-left: 80px;
+    background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background-bonus-desktop.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .additional-products__bonus {
+      background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/retina/background-bonus-desktop-@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .additional-products__bonus-title {
     padding: 0;
-    margin: 43px 43px;
+    margin: 45px 43px;
   }
 
   .additional-products__icon {
-    margin: 60px auto;
+    margin-top: 58px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
