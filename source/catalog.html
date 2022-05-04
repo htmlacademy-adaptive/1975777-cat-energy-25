@@ -11,10 +11,11 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo-cat logotype" href="./index.html">
-        <img class="logotype__logo-cat--mobile" src="img/logo-mobile.svg" width="34" height="37"
-          alt="Логотип Кот Энерджи.">
-        <img class="logotype__logo-cat--tablet" src="img/logo-tablet.svg" width="174" height="51"
-          alt="Логотип Кэт Энерджи.">
+        <picture>
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+          <img class="logotype__logo-cat" src="img/logo-mobile.svg" srcset="img/logo-mobile.svg"
+            alt="Логотип Кот Энерджи.">
+        </picture>
       </a>
       <img class="main-header__logo-cat-energy" src="img/logo-cat-energy.svg" height="18" width="101"
         alt="Логотип Cat Energy.">
@@ -28,7 +29,7 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list reset-list">
-            <li class="main-nav__item ">
+            <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link main-nav__link--catalog " href="./index.html">Главная</a>
             </li>
             <li class="main-nav__item main-nav__item--active">
@@ -57,9 +58,12 @@
               <a class="product-card__icon" href="#">
                 <div class="product-card__wrapper-icon">
                   <picture>
-                    <source srcset="img/kitchen-500-desktop.png" media="(min-width: 1440px)">
-                    <source srcset="img/kitchen-500-tablet.png" media="(min-width: 768px)">
-                    <img class="product-card__photo" src="img/product-card-cat-energy-pro-chicken-500.png"
+                    <source srcset="img/chicken-500-desktop.png, img/retina/chicken-500-desktop-@2x.png 2x"
+                      media="(min-width: 1440px)">
+                    <source srcset="img/chicken-500-tablet.png, img/retina/chicken-500-desktop-@2x.png 2x"
+                      media="(min-width: 768px)">
+                    <img class="product-card__photo" src="img/chicken-500-mobile.png"
+                      srcset="img/chicken-500-mobile.png, img/retina/chicken-500-mobile-@2x.png 2x"
                       alt="Кэт энерджи про 500 грамм со вкусом курицы.">
                   </picture>
                 </div>
@@ -89,9 +93,12 @@
               <a class="product-card__icon" href="#">
                 <div class="product-card__wrapper-icon">
                   <picture>
-                    <source srcset="img/kitchen-1000-desktop.png" media="(min-width: 1440px)">
-                    <source srcset="img/kitchen-1000-tablet.png" media="(min-width: 768px)">
-                    <img class="product-card__photo" src="img/product-card-cat-energy-pro-chicken-1000.png"
+                    <source srcset="img/chicken-1000-desktop.png, img/retina/chicken-1000-desktop-@2x.png 2x"
+                      media="(min-width: 1440px)">
+                    <source srcset="img/chicken-1000-tablet.png, img/retina/chicken-1000-tablet-@2x.png 2x"
+                      media="(min-width: 768px)">
+                    <img class="product-card__photo" src="img/chicken-1000-mobile.png"
+                      srcset="img/chicken-1000-mobile.png, img/retina/chicken-1000-mobile-@2x.png 2x"
                       alt="Кэт энерджи про 1000 грамм со вкусом курицы.">
                   </picture>
                 </div>
@@ -121,9 +128,12 @@
               <a class="product-card__icon" href="#">
                 <div class="product-card__wrapper-icon">
                   <picture>
-                    <source srcset="img/fish-500-desktop.png" media="(min-width: 1440px)">
-                    <source srcset="img/fish-500-tablet.png" media="(min-width: 768px)">
-                    <img class="product-card__photo" src="img/product-card-cat-energy-pro-fish-500.png"
+                    <source srcset="img/fish-500-desktop.png, img/retina/fish-500-desktop-@2x.png 2x"
+                      media="(min-width: 1440px)">
+                    <source srcset="img/fish-500-tablet.png, img/retina/fish-500-tablet-@2x.png 2x"
+                      media="(min-width: 768px)">
+                    <img class="product-card__photo" src="img/fish-500-mobile.png"
+                      srcset="img/fish-500-mobile.png, img/retina/fish-500-mobile-@2x.png 2x"
                       alt="Кэт энерджи про 500 грамм со вкусом рыбы.">
                   </picture>
                 </div>
@@ -153,9 +163,12 @@
               <a class="product-card__icon" href="#">
                 <div class="product-card__wrapper-icon">
                   <picture>
-                    <source srcset="img/fish-1000-desktop.png" media="(min-width: 1440px)">
-                    <source srcset="img/fish-1000-tablet.png" media="(min-width:768px)">
-                    <img class="product-card__photo" src="img/product-card-cat-energy-pro-fish-1000.png"
+                    <source srcset="img/fish-1000-desktop.png, img/retina/fish-1000-desktop-@2x.png 2x"
+                      media="(min-width: 1440px)">
+                    <source srcset="img/fish-1000-tablet.png, img/retina/fish-1000-tablet-@2x.png 2x"
+                      media="(min-width:768px)">
+                    <img class="product-card__photo" src="img/fish-1000-mobile.png"
+                      srcset="img/fish-1000-mobile.png, img/retina/fish-1000-mobile-@2x.png 2x"
                       alt="Кэт энерджи про 1000 грамм со вкусом рыбы.">
                   </picture>
                 </div>
@@ -185,9 +198,12 @@
               <a class="product-card__icon" href="#">
                 <div class="product-card__wrapper-icon">
                   <picture>
-                    <source srcset="img/buckwheat-500-desktop.png" media="(min-width: 1440px)">
-                    <source srcset="img/buckwheat-500-tablet.png" media="(min-width: 768px)">
-                    <img class="product-card__photo" src="img/product-card-cat-energy-slim-buckwheat-500.png"
+                    <source srcset="img/buckwheat-500-desktop.png, img/retina/buckwheat-500-desktop-@2x.png 2x"
+                      media="(min-width: 1440px)">
+                    <source srcset="img/buckwheat-500-tablet.png, img/retina/buckwheat-500-tablet-@2x.png 2x"
+                      media="(min-width: 768px)">
+                    <img class="product-card__photo" src="img/buckwheat-500-mobile.png"
+                      srcset="img/buckwheat-500-mobile.png, img/retina/buckwheat-500-mobile-@2x.png 2x"
                       alt="Кэт энерджи слим 500 грамм со вкусом гречки.">
                   </picture>
                 </div>
@@ -217,9 +233,12 @@
               <a class="product-card__icon" href="#">
                 <div class="product-card__wrapper-icon">
                   <picture>
-                    <source srcset="img/buckwheat-1000-desktop.png" media="(min-width: 1440px)">
-                    <source srcset="img/buckwheat-1000-tablet.png" media="(min-width: 768px)">
-                    <img class="product-card__photo" src="img/product-card-cat-energy-slim-buckwheat-1000.png"
+                    <source srcset="img/buckwheat-1000-desktop.png, img/retina/buckwheat-1000-desktop-@2x.png 2x"
+                      media="(min-width: 1440px)">
+                    <source srcset="img/buckwheat-1000-tablet.png, img/retina/buckwheat-1000-tablet-@2x.png 2x"
+                      media="(min-width: 768px)">
+                    <img class="product-card__photo" src="img/buckwheat-1000-mobile.png"
+                      srcset="img/buckwheat-1000-mobile.png, img/retina/buckwheat-1000-mobile-@2x.png 2x"
                       alt="Кэт энерджи слим 1000 грамм со вкусом гречки.">
                   </picture>
                 </div>
@@ -249,9 +268,12 @@
               <a class="product-card__icon" href="#">
                 <div class="product-card__wrapper-icon">
                   <picture>
-                    <source srcset="img/rice-500-desktop.png" media="(min-width: 1440px)">
-                    <source srcset="img/rice-500-tablet.png" media="(min-width: 768px)">
-                    <img class="product-card__photo" src="img/product-card-cat-energy-slim-rice-500.png"
+                    <source srcset="img/rice-500-desktop.png, img/retina/rice-500-desktop-@2x.png 2x"
+                      media="(min-width: 1440px)">
+                    <source srcset="img/rice-500-tablet.png, img/retina/rice-500-tablet-@2x.png 2x"
+                      media="(min-width: 768px)">
+                    <img class="product-card__photo" src="img/rice-500-mobile.png"
+                      srcset="img/rice-500-mobile.png, img/retina/rice-500-mobile-@2x.png 2x"
                       alt="Кэт энерджи слим 500 грамм со вкусом риса.">
                   </picture>
                 </div>

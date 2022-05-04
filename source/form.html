@@ -11,10 +11,11 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo-cat logotype" href="./index.html">
-        <img class="logotype__logo-cat--mobile" src="img/logo-mobile.svg" width="34" height="37"
-          alt="Логотип Кот Энерджи.">
-        <img class="logotype__logo-cat--tablet" src="img/logo-tablet.svg" width="174" height="51"
-          alt="Логотип Кэт Энерджи.">
+        <picture>
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+          <img class="logotype__logo-cat" src="img/logo-mobile.svg" srcset="img/logo-mobile.svg"
+            alt="Логотип Кот Энерджи.">
+        </picture>
       </a>
       <img class="main-header__logo-cat-energy" src="img/logo-cat-energy.svg" height="18" width="101"
         alt="Логотип Cat Energy.">

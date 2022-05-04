@@ -1,8 +1,106 @@
-.cat-comparison__after {
-  display: none;
+.cat-comparison__wrapper {
+  position: relative;
+  margin: 0 auto;
+  height: 232px;
+  width: 280px;
 }
 
 .cat-comparison__before {
   display: block;
-  margin-top: 40px;
+  width: 100%;
+  position: absolute;
 }
+
+.cat-comparison__after {
+  display: block;
+}
+
+.cat-comparison__image-before {
+  display: block;
+  height: 232px;
+  width: 280px;
+  background-color: @grey-light;
+}
+
+.cat-comparison__before {
+  overflow: hidden;
+
+  img {
+    max-width: none;
+  }
+}
+
+.cat-comparison__range {
+  display: none;
+}
+
+.cat-comparison__image-after {
+  height: 232px;
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .cat-comparison__range {
+    display: block;
+  }
+
+  .cat-comparison__range-mobile {
+    display: none;
+  }
+
+  .cat-comparison__wrapper {
+    position: relative;
+    width: 592px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+
+  .cat-comparison__before {
+    width: 50%;
+    background: linear-gradient(@white 52%, @grey-light 48%);
+
+    img {
+      max-width: none;
+    }
+  }
+
+  .cat-comparison__after {
+    display: block;
+    background: linear-gradient(@white 52%, @grey-light 48%);
+  }
+
+  .cat-comparison {
+    background: linear-gradient(@white 50%, @grey-light 50%);
+  }
+
+  .cat-comparison__image-before {
+    display: block;
+    height: 511px;
+    width: 592px;
+    background-color: transparent;
+  }
+
+  .cat-comparison__image-after {
+    display: block;
+    height: 511px;
+    width: 592px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cat-comparison__after {
+    display: block;
+    background: linear-gradient(@white 52%, @basic-grey 48%);
+  }
+
+  .cat-comparison {
+    background: linear-gradient(@white 50%, @basic-grey 50%);
+  }
+
+  .cat-comparison__before {
+    background: linear-gradient(@white 52%, @basic-grey 48%);
+  }
+}
+
+

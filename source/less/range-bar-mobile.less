@@ -1,0 +1,29 @@
+.range-bar-mobile {
+  display: flex;
+  min-width: 210px;
+  justify-content: space-evenly;
+}
+
+.range-bar-mobile__scale {
+  width: 85px;
+  height: 14px;
+  background-color: @white;
+  border: 1px solid @special-grey;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.range-bar-mobile__toggle-before--active {
+  display: block;
+  width: 35px;
+  height: 6px;
+  background-color: @basic-green;
+  border-radius: 6px;
+  margin: 4px 6px;
+}
+
+@media (min-width: @tablet-width) {
+  .range-bar-mobile {
+    display: none;
+  }
+}

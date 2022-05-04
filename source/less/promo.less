@@ -12,6 +12,13 @@
   top: 0;
 }
 
+@media (min-resolution: 2dppx) {
+  .promo::before {
+    background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/retina/index-background-desktop-mobile-@2x.png");
+    background-size: cover;
+  }
+}
+
 .promo {
   position: relative;
 }
@@ -20,7 +27,7 @@
   position: relative;
   padding-bottom: 22px;
   text-align: center;
-  color: #ffffff;
+  color: @white;
 }
 
 .promo__title {
@@ -48,14 +55,6 @@
   margin: 0 auto;
   margin-bottom: 2px;
   height: auto;
-}
-
-.promo__image--tablet {
-  display: none;
-}
-
-.promo__image--desktop {
-  display: none;
 }
 
 .promo__button-choose-program {
@@ -106,18 +105,13 @@
     margin: 0 0 20px 90px;
   }
 
-  .promo__image {
-    display: none;
-  }
-
-  .promo__image--tablet {
-    display: block;
+  .promo__banner {
     order: 3;
-    margin-top: -75px;
+    margin-top: -80px;
   }
 
-  .promo__image--desktop {
-    display: none;
+  .promo__image {
+    display: block;
   }
 
   .promo__button-choose-program {
@@ -155,11 +149,14 @@
     height: 694px;
   }
 
-  .promo__image--tablet {
-    display: none;
+  @media (min-resolution: 2dppx) {
+    .promo__wrapper::before {
+      background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/retina/index-background-desktop-@2x.png");
+      background-size: cover;
+    }
   }
 
-  .promo__image--desktop {
+  .promo__image {
     display: block;
     position: absolute;
     top: 0;
