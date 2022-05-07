@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page__body">
-  <!--Спрайт-->
+  <!--Sprite-->
   <svg display="none">
     <symbol id="menu-burger" viewBox="0 0 24 18">
       <path d="M0 1.25h24M0 9.25h24M0 17.25h24"/>
@@ -70,7 +70,7 @@
     </symbol>
   </svg>
 
-  <!--Шапка-->
+  <!--Header-->
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo-cat logotype" href="./index.html">
@@ -115,6 +115,11 @@
         </div>
         <a class="promo__banner" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/webp/promo-cat-energy-desktop.webp 1x, img/webp/promo-cat-energy-desktop-@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/webp/promo-cat-energy-tablet.webp 1x, img/webp/promo-can-energy-tablet-@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp/promo-cat-energy.webp 1x, img/webp/promo-cat-energy-@2x.webp 2x">
             <source srcset="img/promo-cat-energy-desktop.png, img/retina/promo-cat-energy-desktop-@2x.png 2x"
               media="(min-width: 1440px)">
             <source srcset="img/promo-cat-energy-tablet.png, img/retina/promo-can-energy-tablet-@2x.png 2x"
@@ -196,7 +201,7 @@
         </ul>
       </div>
     </section>
-    <!--живой пример-->
+    <!--Live Example-->
     <section class="live-example">
       <div class="live-example__wrapper">
         <h2 class="live-example__title">Живой пример</h2>
@@ -229,6 +234,10 @@
                   <picture>
                     <source srcset="img/cat-fat-desktop.png, img/retina/cat-fat-desktop-@2x.png"
                       media="min-width: 768px">
+                    <source type="image/webp"
+                      srcset="img/webp/cat-fat-desktop.webp 1x, img/webp/cat-fat-desktop-@2x.webp 2x"
+                      media="min-width: 768px">
+                    <source type="image/webp" srcset="img/webp/cat-fat.webp 1x, img/webp/cat-fat-@2x.webp 2x">
                     <img class="cat-comparison__image-before" src="img/cat-fat.png"
                       srcset="img/cat-fat.png, img/retina/cat-fat-@2x.png 2x" alt="Кот до приема кэт энерджи.">
                   </picture>
@@ -236,6 +245,10 @@
 
                 <div class="cat-comparison__after" id="catComparisonBlockAfter">
                   <picture>
+                    <source type="image/webp"
+                      srcset="img/webp/cat-skinny-desktop.webp 1x, img/webp/cat-skinny-desktop-@2x.webp 2x"
+                      media="min-width: 768px">
+                    <source type="image/webp" srcset="img/webp/cat-skinny.webp 1x, img/webp/cat-skinny-@2x.webp 2x">
                     <source srcset="img/cat-skinny-desktop.png, img/retina/cat-skinny-desktop-@2x.png 2x"
                       media="min-width: 768px">
                     <img class="cat-comparison__image-after" src="img/cat-skinny.png"
@@ -269,7 +282,7 @@
       </div>
     </section>
   </main>
-  <!--Подвал-->
+  <!--Footer-->
   <footer class="footer">
     <div class="footer__wrapper">
       <!--Сотрудничество-->

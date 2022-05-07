@@ -75,6 +75,15 @@
   text-align: center;
   text-transform: uppercase;
   color: @white;
+
+  &:hover {
+    background-color: @basic-green2;
+  }
+
+  &:active {
+    background-color: @basic-green2;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .additional-products__bonus {
@@ -105,6 +114,8 @@
 .additional-products__icon {
   margin: 60px auto;
   width: 100%;
+  height: 80px;
+  fill: @white;
 }
 
 @media (min-width: @tablet-width) {
@@ -170,12 +181,15 @@
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background-bonus-tablet.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   @media (min-resolution: 2dppx) {
     .additional-products__bonus {
       background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/retina/background-bonus-tablet-@2x.png");
       background-size: cover;
+      background-repeat: no-repeat;
     }
   }
 
