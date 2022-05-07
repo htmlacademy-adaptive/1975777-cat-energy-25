@@ -4,6 +4,7 @@
 }
 
 .additional-products__title {
+  position: relative;
   margin: 0;
   font-family: inherit;
   font-weight: 400;
@@ -11,6 +12,16 @@
   line-height: 24px;
   text-align: left;
   color: @black;
+}
+
+.additional-products__title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  background-color: #68b738;
+  margin-left: 22px;
 }
 
 .additional-products__cards {
@@ -128,6 +139,21 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+  }
+
+  .additional-products__title::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    background-color: #68b738;
+    margin-right: 40px;
+    right: 100%;
+  }
+
+  .additional-products__title::after {
+    margin-left: 40px;
   }
 
   .additional-products__cards {
