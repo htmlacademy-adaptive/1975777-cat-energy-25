@@ -101,11 +101,11 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list reset-list">
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--catalog " href="./index.html">Главная</a>
             </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link main-nav__link--catalog" href="./catalog.html">Каталог продукции</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--catalog main-nav__link--active main-nav__link--catalog-active" href="./catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--catalog" href="./form.html">Подбор программы</a>
@@ -425,8 +425,8 @@
             </li>
           </ul>
           <div class="additional-products__bonus bonus-prize">
-            <svg class="additional-products__icon">
-              <use xlink:href="#prize"></use>
+            <svg class="additional-products__icon" aria-hidden="true" focusable="false">
+              <use xlink:href="#prize" ></use>
             </svg>
             <h2 class="additional-products__bonus-title">Закажите все<br> и получите чехол для<br> кота в подарок!</h2>
           </div>

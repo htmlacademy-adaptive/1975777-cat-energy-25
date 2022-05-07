@@ -1,9 +1,12 @@
 .footer-social {
   display: flex;
   justify-content: center;
-  padding: 0;
-  margin: 0;
   list-style-type: none;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid @color-border;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .footer-social__icon:hover {
@@ -38,4 +41,14 @@
 
 .footer-social__item:not(:last-child) {
   margin-right: 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .footer-social {
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+  }
+
+
 }

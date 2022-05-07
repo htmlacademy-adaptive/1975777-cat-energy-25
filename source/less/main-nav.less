@@ -28,6 +28,14 @@
   text-decoration: none;
   color: @black;
   text-align: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__burger {
@@ -124,6 +132,19 @@
     padding: 0;
   }
 
+  .main-nav__link--active {
+    position: relative;
+  }
+
+  .main-nav__link--active::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-color: @basic-green;
+    height: 2px;
+    bottom: -8px;
+  }
+
   .main-nav__toggle {
     display: none;
   }
@@ -146,11 +167,23 @@
     color: @white;
   }
 
+  .main-nav__link--active::before {
+    background-color: @white;
+  }
+
   .main-nav__link.main-nav__link--catalog {
     color: @black;
   }
 
+  .main-nav__link--catalog-active::before {
+    background-color: @basic-green;
+  }
+
   .main-nav__link.main-nav__link--form {
     color: @black;
+  }
+
+  .main-nav__link--form-active::before {
+    background-color: @basic-green;
   }
 }
