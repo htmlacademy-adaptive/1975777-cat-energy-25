@@ -29,6 +29,18 @@
   text-transform: uppercase;
   color: @text-grey;
   width: 100%;
+
+  &:hover {
+    border: 1px solid @special-grey;
+  }
+
+  &:focus {
+    outline: 2px solid @text-grey;
+  }
+
+  &:invalid {
+    outline: 2px solid @error;
+  }
 }
 
 @media (min-width: @tablet-width) {

@@ -25,7 +25,6 @@
 
 .promo__wrapper {
   position: relative;
-  padding-bottom: 22px;
   text-align: center;
   color: @white;
 }
@@ -41,7 +40,7 @@
 }
 
 .promo__subtitle {
-  margin-top: 25px;
+  margin-top: 5px;
   margin-bottom: 29px;
   font-family: inherit;
   font-weight: 400;
@@ -66,14 +65,24 @@
   margin-left: 20px;
   background-color: @basic-green;
   font-family: inherit;
-  padding: 7px 44px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  text-align: center;
+
   color: @white;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    background-color: @basic-green2;
+  }
+
+  &:active {
+    background-color: @basic-green2;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {

@@ -14,6 +14,11 @@
   background-color: @white;
 }
 
+.main-nav__item {
+  border-top: 1px solid @border-nav;
+  border-bottom: 1px solid @border-nav;
+}
+
 .main-nav__link {
   padding-top: 22px;
   padding-bottom: 24px;
@@ -28,6 +33,22 @@
   text-decoration: none;
   color: @black;
   text-align: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__burger {
+  fill: @black;
+  width: 24px;
+  height: 18px;
+  stroke: @black;
+  stroke-width: 1.5;
 }
 
 .main-nav__toggle {
@@ -106,6 +127,7 @@
 
   .main-nav__item {
     width: auto;
+    border: none;
   }
 
   .main-nav__link {
@@ -114,6 +136,19 @@
     min-height: auto;
     text-align: center;
     padding: 0;
+  }
+
+  .main-nav__link--active {
+    position: relative;
+  }
+
+  .main-nav__link--active::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-color: @basic-green;
+    height: 2px;
+    bottom: -8px;
   }
 
   .main-nav__toggle {
@@ -138,11 +173,23 @@
     color: @white;
   }
 
+  .main-nav__link--active::before {
+    background-color: @white;
+  }
+
   .main-nav__link.main-nav__link--catalog {
     color: @black;
   }
 
+  .main-nav__link--catalog-active::before {
+    background-color: @basic-green;
+  }
+
   .main-nav__link.main-nav__link--form {
     color: @black;
+  }
+
+  .main-nav__link--form-active::before {
+    background-color: @basic-green;
   }
 }

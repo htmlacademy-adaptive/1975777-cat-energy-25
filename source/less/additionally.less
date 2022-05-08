@@ -28,6 +28,41 @@
   align-items: center;
   text-transform: uppercase;
   color: @black;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.additionally__label {
+  position: relative;
+  padding-left: 16px;
+}
+
+.additionally__mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid @special-grey;
+  top: 0;
+  left: 0;
+  background-color: @white;
+
+  &:hover {
+    border: 1px solid @grey-2;
+  }
+}
+
+.additionally__form[type="checkbox"]:checked + .additionally__mark {
+  position: absolute;
+  content: "";
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.additionally__description {
+  padding-left: 16px;
 }
 
 @media (min-width: @tablet-width) {
@@ -66,6 +101,20 @@
 
   .additionally__item {
     width: 50%;
+    margin-bottom: 42px;
+  }
+
+  .additionally__mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .additionally__description {
+    padding-left: 19px;
+  }
+
+  .additionally__label {
+    padding-left: 19px;
   }
 }
 

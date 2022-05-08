@@ -42,6 +42,15 @@
   text-transform: uppercase;
   color: @white;
   margin-bottom: 21px;
+
+  &:hover {
+    background-color: @basic-green2;
+  }
+
+  &:active {
+    background-color: @basic-green2;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .questionnaire__send {
@@ -62,7 +71,7 @@
 
 @media (min-width: @tablet-width) {
   .questionnaire__contact {
-    padding: 76px 0 65px 0;
+    padding: 56px 0 65px 0;
   }
 
   .questionnaire__cat-data {
