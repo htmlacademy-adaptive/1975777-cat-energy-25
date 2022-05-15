@@ -8,19 +8,22 @@
   line-height: 26px;
   vertical-align: baseline;
   color: @black;
-  padding-right: 15px;
+  padding-right: 21px;
 }
 
 .contact__list {
   padding-top: 35px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 .contact__item {
-  margin-bottom: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.contact__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .contact__label {
@@ -30,7 +33,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @text-grey;
-  margin-right: 19px;
+  margin-right: 9px;
   white-space: nowrap;
 }
 

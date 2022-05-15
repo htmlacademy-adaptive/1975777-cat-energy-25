@@ -7,4 +7,33 @@
   text-align: center;
   text-transform: uppercase;
   color: @black;
+  padding-bottom: 65px;
+}
+
+.range-bar__input {
+  -webkit-appearance: none;
+  width: 426px;
+  height: 6px;
+  background-color: @range-bar;
+  border-radius: 6px;
+  margin-left: 23px;
+  margin-right: 23px;
+}
+
+.range-bar__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: @white;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  position: relative;
+  background-image: url("../img/slider-control.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: @desktop-width) {
+  .range-bar {
+    padding-bottom: 0;
+  }
 }

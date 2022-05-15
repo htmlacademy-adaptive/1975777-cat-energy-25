@@ -5,6 +5,7 @@
   line-height: 24px;
   text-align: center;
   color: @black;
+  text-transform: uppercase;
 }
 
 .module__text {
@@ -38,13 +39,15 @@
 
 .module__description--result {
   margin-top: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .module__description:not(:last-child) {
   flex-direction: column;
   border: 1px solid @special-grey;
   box-sizing: border-box;
-  padding-top: 14px;
+  padding-top: 10px;
   border-radius: 3px;
   min-width: 124px;
 }
@@ -75,9 +78,10 @@
     display: flex;
     flex-direction: column;
     margin-top: 0;
-    align-items: end;
+    align-items: flex-end;
     align-self: center;
     margin-left: auto;
+    padding: 0;
   }
 
   .module__text--result {
