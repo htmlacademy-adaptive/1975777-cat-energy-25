@@ -1,7 +1,6 @@
 .purpose-program__form {
   padding: 0;
   margin: 0;
-  padding-top: 20px;
   border: none;
 }
 
@@ -19,11 +18,14 @@
 
 .purpose-program__item {
   margin: 0;
-  margin-bottom: 25px;
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.purpose-program__item:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 .purpose-program__label {
