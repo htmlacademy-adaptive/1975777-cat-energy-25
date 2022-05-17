@@ -16,11 +16,10 @@
 }
 
 .additionally__list {
-  padding: 34px 0;
+  padding: 39px 0;
 }
 
 .additionally__item {
-  margin-bottom: 25px;
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
@@ -32,6 +31,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.additionally__item:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 .additionally__label {
@@ -73,7 +76,7 @@
   .additionally__buy-more {
     font-size: 36px;
     line-height: 36px;
-    padding-right: 40px;
+    padding-right: 44px;
   }
 
   .additionally__wrapper {
@@ -88,7 +91,7 @@
     top: 50%;
     background-color: @basic-green;
     right: 100%;
-    margin-right: 40px;
+    margin-right: 37px;
   }
 
   .additionally__list {
@@ -96,12 +99,21 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 65px 0;
+    padding: 58px 0 32px;
   }
 
   .additionally__item {
     width: 50%;
-    margin-bottom: 42px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .additionally__item:not(:last-child) {
+    margin-bottom: 37px;
+  }
+
+  .additionally__item:last-child {
+    margin-bottom: 37px;
   }
 
   .additionally__mark {
@@ -110,7 +122,7 @@
   }
 
   .additionally__description {
-    padding-left: 19px;
+    padding-left: 22px;
   }
 
   .additionally__label {
